@@ -15,8 +15,8 @@ o	Division
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
 
-print("Addition: ", num1 + num2)
-print("Subtraction: ", num1 - num2)
-print("Multiplication: ", num1 * num2)
-print("Division: ", num1 / num2)
+print("Addition:", num1 + num2)
+print("Subtraction:", num1 - num2)
+print("Multiplication:", num1 * num2)
+print("Division:", num1 / num2)
 print("Displaying the results of each operation on the screen.")
