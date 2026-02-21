@@ -1,16 +1,24 @@
-filename = 'sample.txt'
+
+
+fileName1 = 'sample.txt'
 
 try:
-    # Attempt to open the file in read mode
-    with open(filename, 'r') as file:
+    with open(fileName1, 'r') as file:
         print("Reading file content:")
 
-        # Iterate through each line in the file
-        # enumerate(..., start=1) gives us a line counter starting at 1
-        for line_number, line in enumerate(file, start=1):
-            # .strip() removes the invisible newline characters at the end of each line
-            print(f"Line {line_number}: {line.strip()}")
+
+        lines = file.readlines()
+        _serial = 1
+
+        for line in lines:
+            serial = _serial + 1
+            print(f"Line {_serial}: {line.rstrip()}")
+
+
+
+        # print(f"Line 1:", line1.replace("\n", ""))
+        # print(f"Line 2:", line2.replace("\n", ""))
+
 
 except FileNotFoundError:
-    # This block catches the specific error when the file does not exist
-    print(f"Error: The file '{filename}' was not found.")
+    print(f"Error: The file '{fileName1}' was not found.")
